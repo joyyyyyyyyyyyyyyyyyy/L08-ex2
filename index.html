@@ -1,0 +1,45 @@
+<head>
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif
+        }
+        .section {
+            text-align: center; 
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <div id="fullpage" >
+        <div class="section">
+            Section 1<br><br>
+        </div>
+        <div class="section">Section 2</div>
+        <div class="section">
+                <div class="slide" style="font-size: smaller;">Section 3<br><br>slide 1. you're just starting...</div>
+                <div class="slide" style="font-size: smaller;">Section 3<br><br>slide 2. halfway there... a little more to go...</div>
+                <div class="slide" style="font-size: smaller;">Section 3<br><br>slide 3. and you're here. congrats.</div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+    <script>    
+        $(document).ready(function () {
+            $('#fullpage').fullpage({ //initialize
+                //set options
+                sectionsColor: ['#E63244', '#DE4C8A', '#84C3BE'],
+                navigation: true,
+                navigationPosition: 'right',
+                anchors: ['section1', 'section2', 'section3'] //name the anchors for each section
+            });
+        });
+    </script>
+</body>
+
+</html>
